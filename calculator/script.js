@@ -93,12 +93,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // function to Handle percentage operation
-     function handlePercentage() {
-          if (currentInput === '') return;
-          currentInput = (parseFloat(currentInput) / 100).toString();
-          fullEquation += currentInput;
-          updateDisplay(currentInput, fullEquation);
-    }
+    function handlePercentage() {
+    if (currentInput === '') return; // If no input, do nothing
+
+    // Convert the current input into percentage by dividing it by 100
+    let percentageValue = (parseFloat(currentInput) / 100).toString();
+
+    // Append the percentage value to the full equation and currentInput
+    fullEquation += `(${currentInput}%)`;  // Show percentage symbol in equation for clarity
+    currentInput = percentageValue;  // Set the new percentage value to current input
+
+    updateDisplay(currentInput, fullEquation);
     
     
 });
