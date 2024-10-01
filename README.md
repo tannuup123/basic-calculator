@@ -1,5 +1,7 @@
 Basic Calculator with Full Equation Display
+
 ***Project Description***
+
 This is a fully functional calculator built using HTML, CSS, and JavaScript. The calculator supports basic arithmetic operations such as addition, subtraction, multiplication, and division. Additionally, it includes percentage calculation, square root, and displays the full equation along with the result. This makes it easy for users to track their input and view the entire mathematical expression before the final result is shown.
 
 The calculator is designed with a clean and modern user interface, providing an intuitive experience for users.
